@@ -330,4 +330,16 @@ document.addEventListener('DOMContentLoaded', function () {
   speedSlider.oninput = function () {
     speedValue.innerHTML = this.value;
   };
+
+  /**Start/Stop Button */
+  const startButton = document.getElementById('start-stop');
+
+  startButton.onclick = function () {
+    startButton.classList.toggle('stop');
+    if (startButton.className == 'stop') {
+      startButton.innerHTML = 'Stop';
+    } else {
+      startButton.innerHTML = 'Start';
+    }
+  };
 });

@@ -403,7 +403,7 @@ select {
 .controls #speed-control {
   margin: 20px;
   height: 200px;
-  min-width: 70px;
+  min-width: 60px;
   display: flex;
   flex-direction: column;
 }
@@ -427,4 +427,36 @@ select {
 .controls #speed-control .speed-labels {
   display: flex;
   flex-direction: column;
+}
+
+/** Start/Stop button*/
+.on-off-button button#start-stop {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  min-width: 140px;
+  padding: 24px 45px;
+  margin: 10px auto;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.4s linear 0s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.on-off-button button#start-stop:hover {
+  color: #111;
+}
+
+.on-off-button button#start-stop {
+  background: #4caf50;
+}
+
+.on-off-button button#start-stop.stop {
+  background: #ff3034;
 }
