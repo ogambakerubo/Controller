@@ -30,6 +30,22 @@
             <div id="joystick">
               <div class="draggable" id="knob"></div>
             </div>
+            <div class="input-group" id="speed-control">
+              <div class="speed-slider">
+                <input
+                  type="range"
+                  id="speed"
+                  min="0"
+                  max="1023"
+                  value="0"
+                  class="default-action"
+                />
+              </div>
+              <div class="speed-labels">
+                <label for="speed">Speed</label>
+                <div id="speed-value" class="range-min">0</div>
+              </div>
+            </div>
           </div>
           <div class="on-off-button"></div>
         </div>

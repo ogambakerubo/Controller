@@ -92,6 +92,13 @@ figure img {
   }
 }
 
+@media (max-width: 500px) {
+  iframe {
+    max-height: 180px;
+    max-width: 270px;
+  }
+}
+
 section#buttons {
   display: flex;
   flex-wrap: nowrap;
@@ -360,7 +367,7 @@ select {
   width: 200px;
   height: 200px;
   background: #333333;
-  margin: 20px auto;
+  margin: 20px;
   position: relative;
   border-radius: 8px;
 }
@@ -372,9 +379,9 @@ select {
   width: 100px;
   height: 100px;
   position: relative;
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
   background: #ff3034;
 }
 
@@ -384,4 +391,40 @@ select {
   display: flex;
   justify-content: center;
   padding: 10px 0;
+}
+
+/** Speed slider*/
+.controls {
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.controls #speed-control {
+  margin: 20px;
+  height: 200px;
+  min-width: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.speed-slider {
+  display: inline-block;
+  width: 20px;
+  height: 150px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.speed-slider input#speed {
+  width: 150px;
+  height: 20px;
+  margin: 0;
+  transform-origin: 75px 75px;
+  transform: rotate(-90deg);
+}
+
+.controls #speed-control .speed-labels {
+  display: flex;
+  flex-direction: column;
 }

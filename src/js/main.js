@@ -319,4 +319,15 @@ document.addEventListener('DOMContentLoaded', function () {
     if (knobAngle == 1024) knobAngle = 0;
     return knobAngle;
   }
+
+  /**Speed slider*/
+  const speedSlider = document.getElementById('speed'),
+    speedValue = document.getElementById('speed-value');
+
+  speedValue.innerHTML = speedSlider.value; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  speedSlider.oninput = function () {
+    speedValue.innerHTML = this.value;
+  };
 });
