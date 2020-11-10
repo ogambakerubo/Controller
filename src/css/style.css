@@ -92,13 +92,6 @@ figure img {
   }
 }
 
-@media (max-width: 500px) {
-  iframe {
-    max-height: 180px;
-    max-width: 270px;
-  }
-}
-
 section#buttons {
   display: flex;
   flex-wrap: nowrap;
@@ -391,6 +384,22 @@ select {
   display: flex;
   justify-content: center;
   padding: 10px 0;
+}
+
+.video-player iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}
+
+@media (max-width: 600px) {
+  .video-player {
+    padding: 0;
+  }
+
+  iframe {
+    max-height: 200px;
+  }
 }
 
 /** Speed slider*/
